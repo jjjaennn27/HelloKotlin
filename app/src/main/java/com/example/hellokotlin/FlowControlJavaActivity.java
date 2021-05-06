@@ -26,22 +26,34 @@ public class FlowControlJavaActivity extends AppCompatActivity {
                 int number = Integer.parseInt(fieldNumber.getText().toString());
 
                 if (number % 2 == 0) {
-                    Toast.makeText(getApplicationContext(), "" + number + "은(는) 2의 배수", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "" + number + "은(는) 2의 배수", Toast.LENGTH_SHORT).show();
+                    ToastUtilJAVA.toast_short(number + "은(는) 2의 배수");
                 }
                 else if (number % 3 == 0) {
-                    Toast.makeText(getApplicationContext(), "" + number + "은(는) 3의 배수", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "" + number + "은(는) 3의 배수", Toast.LENGTH_SHORT).show();
+                    ToastUtilJAVA.toast_short(number + "은(는) 3의 배수");
                 }
                 else {
-                    Toast.makeText(getApplicationContext(), "" + number + "은(는) else", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "" + number + "은(는) else", Toast.LENGTH_LONG).show();
+                   ToastUtilJAVA.toast_long(number + "은(는) else");
                 }
                 switch (number){
                     case 4 :
-                    case 9 : btnLD.setText("실행 for" + number);
-                        break;
-                    default: btnLD.setText("실행 for else");
-                        break;
+                    case 9 : btnLD.setText("실행 for" + number); break;
+                    default: btnLD.setText("실행 for else"); break;
                 }
             }
         });
     }
+    // FlowControlJavaActivity anObject = new ... ()
+    // anObject.toast_short(message);
+
+//    private void toast_long(String s) {
+//        Toast.makeText(getApplicationContext(), s , Toast.LENGTH_SHORT).show();
+//    }
+//
+//    private void toast_short(String s) {
+//        Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
+//    }
+
 }
