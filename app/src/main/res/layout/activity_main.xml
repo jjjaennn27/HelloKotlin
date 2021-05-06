@@ -10,7 +10,7 @@
         android:id="@+id/btnJava"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="160dp"
         android:text="View BINDING JAVA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -21,10 +21,10 @@
         android:id="@+id/btnKotlin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="224dp"
         android:text="View BINDING KOTLIN"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,11 +42,29 @@
         android:id="@+id/btnVarJava"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="140dp"
         android:text="VARIABLE JAVA"
         app:layout_constraintBottom_toBottomOf="@+id/btnVarKotlin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnKotlin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnKotlin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnFlowControlJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="FLOWCONTROL-J"
+        app:layout_constraintStart_toStartOf="@+id/btnVarJava"
+        app:layout_constraintTop_toBottomOf="@+id/btnVarJava" />
+
+    <Button
+        android:id="@+id/btnFlowControlKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLOWCONTROL-K"
+        app:layout_constraintEnd_toEndOf="@+id/btnVarKotlin"
+        app:layout_constraintTop_toTopOf="@+id/btnFlowControlJava" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
